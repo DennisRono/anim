@@ -1,6 +1,8 @@
 body{
     padding: 0;
     margin: 0;
+    width: 100% !important;
+    height: 100vh;
     border-style: border-box;
     overflow-x: hidden;
     background-color: rgb(9, 9, 12);
@@ -10,6 +12,8 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#innerfill{
     animation: filler 0.5s ease forwards 3.6s;
 }
 
@@ -75,7 +79,6 @@ body{
     }
     to{
         stroke-dashoffset: 0;
-        stroke-dasharray: 0;
         stroke: white;
     }
 }
@@ -84,6 +87,6 @@ body{
         fill: transparent;
     }
     to{
-        fill: white;
+        fill: white !important;
     }
 }
